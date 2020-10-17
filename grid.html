@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .grid-container {
+            display: grid;
+            grid-gap: 1px;
+            grid-template-areas: 'header header header header header' 'menu main main main main';
+        }
+        .grid-container > div {
+            background-color: lightgray;
+            padding: 60px 0px;
+        }
+        .header {
+            grid-area: header;
+            height: 30px;
+            font-size: 30px;
+            background-color: rgb(0, 0, 0);
+            }
+        .menu {
+            grid-area: menu;
+            height: 100%;
+            }
+        .main {
+            grid-area: main;
+            height: 100%;
+            }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 10px;
+            background-color: blue;
+            margin-bottom: 5px;
+            color: white;
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+        li:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Continental Forums</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#vs battles">Vs Battles</a></li>
+                <li><a href="#General Discussion">General Discussion</a></li>
+                <li><a href="#Anime Discussion">Anime Discussion</a></lil>
+                <li><a href="#Manga Discussion">Manga Discussion</a></li>
+            </ul>
+        </div>
+        <div class="main"><h1>Vs Battles</h1>
+            <p>LMFAO I know this looks shitty but I just so started so...</p>
+        </div>
+    </div>
+</body>
+</html>

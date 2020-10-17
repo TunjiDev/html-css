@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- your html file: -->
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container">
+    </div>
+    <script>
+        //ALTERING ELEMENTS:
+        const div = document.createElement("div"); // create a new div referenced in the variable 'div' 
+                    
+        //ADDING INLINE STYLE:
+        div.style.color = "blue"; // adds the indicated style rule                                      
+        div.style.cssText = "color: blue; background: white"; // adds several style rules          
+        div.setAttribute("style", "color: blue; background: white"); // adds several style rules    
+        
+        div.style.background-color // doesn't work - attempts to subtract color from div.style.background
+        div.style.backgroundColor // accesses the divs background-color style
+        div.style["background-color"] // also works
+        div.style.cssText = "background-color: white" // ok in a string
+        
+        //EDITING ATTRIBUTES:
+        div.setAttribute('id', 'theDiv'); // if id exists update it to 'theDiv' else create an id with value "theDiv"
+        div.getAttribute('id'); // returns value of specified attribute, in this case "theDiv"                           
+        div.removeAttribute('id'); // removes specified attribute
+
+        //WORKING WITH CLASSES:
+        div.classList.add('new'); // adds class "new" to your new div
+        div.classList.remove('new'); // remove "new" class from div
+        div.classList.toggle('active'); // if div doesn't have class "active" then add it, or if it does, then remove it
+
+        //ADDING TEXT CONTENT & HTML CONTENT:
+        div.textContent = 'Hello World!'; // creates a text node containing "Hello World!" and inserts it in div
+        div = document.createTextNode("Hello World!");
+        div.innerHTML = '<span>Hello World!</span>'; // renders the html inside div
+        //*Note that textContent is preferable for adding text, and innerHTML should be used sparingly as it can create security risks if misused.
+    </script>
+</body>
+</html>

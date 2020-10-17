@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News</title>
+    <style>
+        body {
+            margin: 0 110px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            margin-top: 8px;
+            padding-bottom: 10px;
+            margin-bottom: 0;
+            background-color: rgb(243, 240, 240);
+        }
+        .nav {
+            background-color: darkorange;
+        }
+        .nav ul {
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li {
+            float: left;
+            border-right: 1px solid black;
+            line-height: 10px;
+        }
+        .nav li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: black;
+        }
+        .main li {
+            margin-bottom: 2px;
+        }
+        .main li a {
+            text-decoration: none;
+            color: black;
+        }
+        .main {
+            border-bottom: 3px solid darkorange;
+        }
+        .main div {
+            font-size: 13px;
+            opacity: 0.6;
+        }
+        img {
+            float: left;
+            border: 1px solid white;
+            margin: 2px;
+        }
+        .footer {
+            text-align: center;
+        }
+        .footer a {
+            margin: auto;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        .main ol a:hover {
+            text-decoration: underline;
+        }
+        /* For better responsiveness for mobile users*/
+        @media only screen and (max-width: 600px) {
+            body {margin: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul><img src="https://i.imgur.com/39arprC.gif" alt="Y">
+                <li><b><a href= "#">Hacker News</a></b></li>
+                <li><a href= "#new">new</a></li>
+                <li><a href= "#past">past</a></li>
+                <li><a href= "#comments">comments</a></li>
+                <li><a href= "#ask">ask</a></li>
+                <li><a href= "#show">show</a></li>
+                <li><a href= "#jobs">jobs</a></li>
+                <li><a href= "#submit">submit</a></li>
+                 <li style= "float: right; border: none;"><a href= "#login">login</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <ol>
+                <li><a href="#greentea">Green Tea is inversely Associated with the Incidence of Influenza Infection</a> (<a href="#oup" style="font-size: 13px; opacity: 0.6;">oup.com</a>)<br>
+                    <div>37 points by <a href="#">batirch</a> <a href="#time">1 day ago</a>| <a href="#hide">hide</a> | <a href="#13">13 comments</a></div></li>
+                <li><a href="#Sdenial">Stages of denial in encountering k</a> (<a href="#nsl" style="font-size: 13px; opacity: 0.6;">nsl.com</a>)<br>
+                    <div>106 points by <a href="#kick">kick</a> <a href="#">4 hours ago</a> | <a href="#hide">hide</a> | <a href="#40">40 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">a bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">a bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+                <li><a href="#bunch">A bunch of stuff a bunch of stuff a bunch of stuff</a> (<a href="#side" style="font-size: 13px; opacity: 0.6;">sidelink.com)</a><br>
+                    <div>20 points by <a href="#example">example</a> <a href="#10">10 hours ago</a> | <a href="#hide">hide</a> | <a href="#comments">50 comments</a></div></li>
+            </ol>
+            <p><a href="#more" style="text-decoration: none; color: black; opacity: 0.6;">More</a></p>
+        </div>
+        <div class="footer">
+            <a href="#">Applications are open for YC Summer 2020</a>
+            <br><br>
+            <a href="#guide">Guidelines</a> | <a href="#faq">FAQ</a> | <a href="#support">Support</a> | <a href="#api">API</a> | <a href="#security">Security</a> | <a href="#lists">Lists</a> | <a href="#bookmark">Bookmarklet</a> | <a href="#legal">Legal</a> | <a href="#apply">Apply to YC</a> | <a href="#contact">Contact</a>
+            <br><br>
+            <form style="opacity: 0.6;">
+                Search:
+                <input type="text" name="search">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

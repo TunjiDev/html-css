@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "main">
+    <p>Testing javascript!</p>
+    <p>blah blah blah</p>
+    </div>
+    <p id = "demo"></p>
+    <script>
+        var myElement1 = document.getElementById("main");
+        var myElement2 = myElement1.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = "The second paragrapgh says" + " " + myElement2[1].innerHTML;
+    </script>
+    
+    <h2 id ="h2">Header 2</h2>
+    <script>
+         document.getElementById("h2").style.color = "orange";
+    </script>
+
+    <button onclick="toRed()">To Red</button>
+    <button onclick="toBlue()">To Blue</button>
+    <button onclick="toGreen()">To Green</button>
+    <p id = "change">Tower of God</p>
+    <script>
+        function toRed() {
+            document.getElementById("change").style.color = "red";
+        }
+        function toBlue() {
+            document.getElementById("change").style.color = "blue";
+        }
+        function toGreen() {
+            document.getElementById("change").style.color = "green";
+        }
+    </script>
+
+    <button id = "btn">Try it</button>
+    <p id = "demo2">A red paragraph</p>
+    <script>
+        document.getElementById("btn").addEventListener("click", toRed);
+        function toRed() {
+            document.getElementById("demo2").style.color = "red";
+        }
+    </script>
+    
+    <button onclick = "towerOfGod()">Try it!</button>
+    <script>
+        function towerOfGod() {
+            alert("Tower of freaking gOD!. U don't click, u don't proceed!")
+        };
+    </script>
+
+</body>
+</html>

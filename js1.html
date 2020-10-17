@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- your html file: -->
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container">
+    </div>
+    <button id="btn">Click Me Too</button>
+    <script>
+        var container = document.querySelector("#container");
+        var content = document.createElement("div");
+        content.setAttribute("style", "background-color: green");
+        content.classList.add("content"); //add a class attribute (class="content")
+        content.textContent = "This is the text content";
+        container.appendChild(content);
+
+        var redP = document.createElement("p");
+        redP.style.color = "red";
+        redP.textContent = "Hey I'm red!"; //OR redP = document.createTextNode("Hey I'm red!");
+        container.appendChild(redP);
+
+        var blueH = document.createElement("h3");
+        blueH.style.color = "blue";
+        blueH.textContent = "I'm blue h3!"; //OR blueH = document.createTextNode("I'm blue h3!");
+        container.appendChild(blueH);
+
+        var pinkDiv = document.createElement("div");
+        pinkDiv.setAttribute("id", "pinkDiv");
+        pinkDiv.setAttribute("style", "border: 1px solid black; background-color: pink");
+        var hInDiv = document.createElement("h1");
+        var pInDiv = document.createElement("p");
+        hInDiv.textContent = "I'm in a div";
+        pInDiv.textContent = "ME TOO!";
+        pinkDiv.appendChild(hInDiv);
+        pinkDiv.appendChild(pInDiv);
+        container.appendChild(pinkDiv);
+
+        btn.addEventListener('click', function (e) {
+        e.target.style.background = "blue";
+        });
+    </script>
+</body>
+</html>
