@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(190, 181, 181);
+}
+#header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+#header-img {
+    width: 25%;
+    height: 100%;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: rgb(190, 181, 181);
+}
+#navbar-ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* This property is to prevent the li elements from going outside of the list.*/ 
+}
+#navbar-ul li {
+    border-right: 1px solid black;
+}
+#navbar-ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+}
+#navbar-ul li a:hover {
+    background-color: orange;
+}
+#main {
+    margin-top: 20px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#email-label {
+    font-size: 25px;
+    font-weight: bold;
+}
+#email {
+    width: 250px;
+    height: 25px
+}
+#submit {
+    height: 25px;
+    background: hsl(39, 100%, 50%);
+    width: 125px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+#header-section1, #header-section2, #header-section3 {
+    width: 60%;
+    margin: auto;
+    padding-left: 90px;
+}
+#video-section {
+    width: 50%;
+    margin: auto;
+    padding-left: 80px;
+}
+#section5 {
+    width: 100%;
+}
+.pricing1, .pricing2, .pricing3 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.pricing1 {
+    margin: 5px 5px 5px 180px;
+    padding: 0;
+}
+.pricing2 {
+    margin: 5px;
+    padding: 0;
+}
+.pricing3 {
+    margin: 5px 0px 5px 5px;
+    padding: 0;
+}
+.pricing1 ul {
+    list-style-type: none;
+}
+.pricing2 ul {
+    list-style-type: none;
+}
+.pricing3 ul {
+    list-style-type: none;
+}
+.tenor-trombone {
+    background-color: rgb(59, 53, 53);
+    width: 100%;
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    height: 35px;
+    color: hsl(39, 100%, 50%);
+}
+.bass-trombone {
+    background-color: rgb(59, 53, 53);
+    width: 100%;
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    height: 35px;
+    color: hsl(39, 100%, 50%);
+}
+.valve-trombone {
+    background-color: rgb(59, 53, 53);
+    width: 100%;
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    height: 35px;
+    color: hsl(39, 100%, 50%);
+}
+.pricing1-button, .pricing2-button, .pricing3-button {
+    height: 35px;
+    width: 100px;
+    border: none;
+    background-color: hsl(39, 100%, 50%);
+    text-align: center;
+}
+footer {
+    background-color: rgb(59, 53, 53);
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+footer ul li {
+    float: right;
+}
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color:hsl(39, 100%, 50%)
+}
+span {
+    float: right;
+    color: hsl(39, 100%, 50%);
+}
+@media (max-width: 600px) {
+    #header-section1, #header-section2, #header-section3 {
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    #video-section {
+        width: 400;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 600px) {
+    .pricing1, .pricing2, .pricing3 {
+        margin: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,182 @@
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        section {
+            margin-top: 0px;
+        }
+        #header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+            background-color: rgb(190, 181, 181);
+            justify-content: flex-end;
+            line-height: 50px;
+        }
+        #navbar-ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* This property is to prevent the li elements from going outside of the list.*/ 
+        }
+        #navbar-ul li {
+            border-right: 1px solid black;
+        }
+        #navbar-ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+            font-size: 20px;
+            color: rgb(189, 58, 35);
+        }
+        #navbar-ul li a:hover {
+            background-color: rgb(219, 192, 141);
+        }
+        #welcome-section {
+            background-color: rgb(49, 45, 45);
+            height: 100vh;
+            width: 100%;
+            padding-top: 30vh;
+            margin-bottom: 0px;
+        }
+        #welcome-section h1, p {
+            color: white;
+            text-align: center;
+        }
+        #welcome-section h1 {
+            font-size: 50px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        #welcome-section p {
+            padding-top: 0px;
+            color: rgb(163, 50, 50);
+        }
+        #welcome-section {
+            font-size: 25px;
+        }
+        #projects {
+            background-color: rgb(105, 66, 141);
+            padding-bottom: 50px;
+            height: 100%;
+        }
+        #projects h1 {
+            font-size: 40px;
+            text-align: center;
+            padding: 70px 0px 0px 0px;
+            margin-top: 0px;
+            color: white;
+        }
+        #grid-container {
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            gap: 30px 20px;
+            margin-top: 40px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        #grid-container a {
+            text-decoration: none;
+            color: white;
+        }
+        img {
+            display: block;
+        }
+        #tribute-page {
+            background-color: rgb(49, 45, 45);
+            width: 400px;
+            padding: 0;
+        }
+        #survey-form {
+            background-color: rgb(49, 45, 45);
+            width: 400px;
+            padding: 0;
+        }
+        #product-landing-page {
+            background-color: rgb(49, 45, 45);
+            width: 400px;
+            padding: 0;
+        }
+        #technical-documentation-page {
+            background-color: rgb(49, 45, 45);
+            width: 400px;
+            padding: 0;
+        }
+        .project-tile {
+            display: block;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            padding: 15px;
+        }
+        #contacts {
+            background-color: gray;
+        }
+        #contacts h1 {
+            margin-top: 0px;
+            padding-top: 25px;
+        }
+        #contacts h1, p {
+            color: white;
+            text-align: center;
+        }
+        #contacts p {
+            font-weight: bold;
+            color: rgb(163, 50, 50);
+        }
+        .contact-links {
+            width: 70%;
+            margin: auto;
+            padding-bottom: 25px;
+        }
+        .contact-links a {
+            text-decoration: none;
+            padding: 5px;
+            margin: 5px;
+            color: rgb(163, 50, 50);
+            font-size: 30px;
+        }
+        @media (max-width: 600px) {
+            #welcome-section h1 {
+                font-size: 24px;
+                text-align: start;
+            }
+        }
+        @media (max-width: 600px) {
+            #welcome-section p {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 600px) {
+            #welcome-section {
+                max-height: 100vh;
+            }
+        }
+        @media (max-width: 600px) {
+            #grid-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 600px) {
+            #tribute-page, #survey-form, #product-landing-page, #technical-documentation-page {
+                margin-bottom: 25px;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                width: 80%;
+                margin: 0;
+                padding: 0;
+            }
+        }
