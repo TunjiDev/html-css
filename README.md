@@ -1,2 +1,2 @@
 # html-css
-A repo containing all of my html &amp; css mini projects
+This is a repo that contains the pictures for my projects.
